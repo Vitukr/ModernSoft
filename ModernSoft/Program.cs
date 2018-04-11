@@ -19,7 +19,6 @@ namespace ModernSoft
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls(args[0])
                 .UseStartup<Startup>()
                 .Build();
     }
